@@ -3,6 +3,8 @@
 Diabetic retinopathy (DR) is an illness which causes damages to retina.
 The goal of this project is to build a generic framework to classify nonreferable (NRDR) and referable (RDR) diabetic retinopathy based on fundus images with deep learning algorithms.
 
+Please check all the implementation details in ```DRD_poster.pdf```.
+
 ## Table of contents
 * Technologies
 * Dataset
