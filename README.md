@@ -3,7 +3,7 @@
 Diabetic retinopathy (DR) is an illness which causes damages to retina.
 The goal of this project is to build a generic framework to classify nonreferable (NRDR) and referable (RDR) diabetic retinopathy based on fundus images with deep learning algorithms.
 
-Please check all the implementation details in ```DRD_poster.pdf```.
+Please check further details in ```DRD_poster.pdf```.
 
 ## Table of contents
 * Dependancy
@@ -20,7 +20,7 @@ Project is created with:
 Indian Diabetic Retinopathy Image Dataset (IDRID)
 
 ## Usage
-Manipulate confin.gin to switch from different modes. And use```main.py``` to start the program.
+Manipulate ```confin.gin``` to switch from different modes. And use```python3 main.py``` to start the program.
 
 ### Tuning Mode
 Under this mode, no checkpoint will be saved and nothing will be visualized. And grid search will be executed.
@@ -44,7 +44,7 @@ main.num_epoch = 1 #epochs you want to run#
 * Data augmentation
 * CNN with Skip-connection(ResNet)
 * AutoGraph
-* Deep visualization(GradCAM)
+* Deep visualization(Grad-CAM)
 * Grid search for hyperparameter tuning(TensorBoard)
 ## Results
 ### Confusion matrix
