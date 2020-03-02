@@ -47,7 +47,12 @@ main.num_epoch = 1 #epochs you want to run#
 * Deep visualization(GradCAM)
 * Grid search for hyperparameter tuning(TensorBoard)
 ## Results
-
+### Confusion matrix
+![accuracy](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/confusionmatrix2.png)  
+Balance accuracy: 82.2%
+### Explainability
+![deepv](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/dpv.png)  
+E.g., for RDR images, our network mainly focuses on hard exudates on retinal fundus, which is reasonable. 
 ## Authors
 - CAO Shijia, https://github.com/scarlettcao
 - ZHONG Liangyu, https://github.com/LEGO999
