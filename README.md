@@ -49,7 +49,7 @@ main.num_epoch = 1 #epochs you want to run#
 ## Results
 ### Confusion matrix
 ![accuracy](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/confusionmatrix2.png)  
-Balance accuracy: 82.2%
+Balance accuracy on test set: 82.2%
 ### Explainability
 ![deepv](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/dpv.png)  
 E.g., for RDR images, our network mainly focuses on hard exudates on retinal fundus, which is reasonable. 
