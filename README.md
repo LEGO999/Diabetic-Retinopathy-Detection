@@ -6,12 +6,12 @@ The goal of this project is to build a generic framework to classify nonreferabl
 Please check all the implementation details in ```DRD_poster.pdf```.
 
 ## Table of contents
-* Technologies
+* Dependancy
 * Dataset
 * Usage
 * Authors
 
-## Technologies
+## Dependancy
 Project is created with:
 - Python 3.6
 - Tensorflow 2.0.0
@@ -39,6 +39,14 @@ main.hparams = {'HP_BS': 8,
                 'HP_LR': 1e-3} #batch size and learning rate you want to use#
 main.num_epoch = 1 #epochs you want to run#
 ```
+## Used Tricks
+* TF-Records
+* Data augmentation
+* CNN with Skip-connection(ResNet)
+* AutoGraph
+* Deep visualization(GradCAM)
+* Grid search for hyperparameter tuning(TensorBoard)
+## Results
 
 ## Authors
 - CAO Shijia, https://github.com/scarlettcao
