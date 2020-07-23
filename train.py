@@ -233,7 +233,7 @@ def train(hparams, num_epoch, tuning):
                 pred_label = tf.argmax(vis_pred, axis=-1)
                 vis_pred = tf.reduce_max(vis_pred, axis=-1)
                 grad_1 = tape.gradient(vis_pred, conv_output)
-                weight = tf.reduce_mean(grad_1, axis=[1, 2]) / grad_1.shape[1]
+                weight = tf.reduce_mean(grad_1, axis=[1, 2])
                 act_map0 = tf.nn.relu(tf.reduce_sum(weight * conv_output, axis=-1))
                 act_map0 = tf.squeeze(tf.image.resize(tf.expand_dims(act_map0, axis=-1), (256, 256), antialias=True),
                                       axis=-1)
