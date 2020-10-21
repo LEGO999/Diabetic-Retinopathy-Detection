@@ -23,7 +23,7 @@ Indian Diabetic Retinopathy Image Dataset (IDRID)
 Manipulate ```confin.gin``` to switch from different modes. And use```python3 main.py``` to start the program.
 
 ### Tuning Mode
-Under this mode, no checkpoint will be saved and nothing will be visualized. And grid search will be executed.
+Under this mode, no checkpoint will be saved and nothing will be visualized. And grid search for hyperparameter optimization will be executed.
 ```
 main.tuning = True
 main.hparams = {'HP_BS': 8,
@@ -39,9 +39,9 @@ main.hparams = {'HP_BS': 8,
                 'HP_LR': 1e-3} #batch size and learning rate you want to use#
 main.num_epoch = 1 #epochs you want to run#
 ```
-## Used Tricks
+## Features
 * TF-Records
-* Data augmentation
+* Data augmentation (Random rotation, shift, shearing, flipping, zoom and brightness jittering are performaned.)
 * CNN with Skip-connection(ResNet)
 * AutoGraph
 * Deep visualization(Grad-CAM)
@@ -50,7 +50,8 @@ main.num_epoch = 1 #epochs you want to run#
 ### Confusion matrix
 ![accuracy](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/confusionmatrix2.png)  
 Balance accuracy on test set: 82.2%
-### Explainability
+### Explainability  
+Grad-CAM Result
 ![deepv](https://github.com/LEGO999/Diabetic-Retinopathy-Detection/blob/master/dpv.png)  
 E.g., for RDR images, our network mainly focuses on hard exudates on retinal fundus, which is reasonable. 
 ## Authors
